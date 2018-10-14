@@ -1,0 +1,29 @@
+#
+#Created by: Wendi Yu
+#Created on: Oct-14-2018
+#
+# generate random number 
+
+# generate random number code
+#https://docs.python.org/3/library/random.html#random.randint
+from random import randint
+random_number = randint( 1,10 )
+
+#check random number function working or not. It is for test case. You can comment out later on.
+#print(random_number)
+	
+guess_number = int(input("Pick an integer between 1 and 10: "))
+
+if guess_number < 1 or guess_number > 10:
+  
+	print("Please, put a vaild number! ")
+
+elif guess_number == random_number:
+
+  print("Correct, You get it! The correct nimber is: ",random_number)
+
+else: 
+  
+	print( "Sorry, the correct number is: ",random_number)
+  
+input()
